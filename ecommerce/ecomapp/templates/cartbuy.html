@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+        .vh-100{
+        background-image: url("https://img.freepik.com/free-vector/gradient-abstract-hexagon-shapes-background_23-2149120168.jpg?w=740&t=st=1675313568~exp=1675314168~hmac=3d0383fdda39265955c751b801132b98e6d9f56b770b2f0720080d715d9fbaff");
+        background-size: 100% ;
+        }
+        .card{
+    background:transparent;
+    border-color: transparent;
+}
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <section class="vh-100" style="background-color: grey;">
+        <div class="container h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-lg-10 col-xl-8">
+              <div class="card text-black" style="border-radius: 20px;">
+                <div class="card-body p-md-6">
+                  <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                      <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4" style="color: white;">Payment</p>
+
+                      <form method="post" enctype="multipart/form-data" class="mx-1 mx-md-4" method="post"> {% csrf_token %}
+
+
+
+                        <div class="d-flex flex-row align-items-center mb-4">
+
+                          <div class="form-outline flex-fill mb-0">
+                            <input type="text" name="productname" value="{{a.productname}}" id="form3Example1c" readonly class="form-control" />
+                            <label class="form-label" for="form3Example1c"></label>
+                          </div>
+                        </div>
+
+                          <div class="d-flex flex-row align-items-center mb-4">
+
+                            <div class="form-outline flex-fill mb-0">
+                              <input type="text" name="price" value="{{a.price}}" id="form3Example1c" readonly class="form-control"/>
+                              <label class="form-label" for="form3Example1c"></label>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-row align-items-center mb-4">
+                            <div class="form-outline flex-fill mb-0">
+                              <input type="number" name="iquantity"  id="form3Example1c" class="form-control"/>
+                              <label class="form-label" for="form3Example1c"></label>
+                            </div>
+                          </div>
+
+                        <div class="d-flex justify-content-center mx-4 mb-5 mb-lg-4">
+                          <button  type="submit" class="btn btn-warning btn-block mb-4">Confirm Order</button>
+
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+</body>
+</html>

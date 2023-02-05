@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+    .navbar{
+         background-color:black;
+         font-family:Arial, Helvetica, sans-serif;
+         font-size: large;
+    }
+    .navbar-brand{
+      font-size:25px;
+    text-transform: uppercase;
+    font-weight:bold;
+    letter-spacing: 4px;
+    color:blueviolet;
+    font-family: cursive;
+
+    }
+    .navbar-brand:hover{
+      color: white;
+      transform: scale(1.05);
+    }
+    .nav-link{
+      font-family:Arial, Helvetica, sans-serif;
+      display: flex;
+
+      color: white;
+    }
+    .nav-link:hover{
+      color:blueviolet;
+      transform: scale(1.05);
+    }
+    .dropdown-menu{
+      background-color: black;
+    }
+    .dropdown-item:hover{
+      color: white;
+       background-color: rgb(80, 14, 141);
+
+    }
+    .dropdown-item{
+      color: white;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">E_cart</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="http://127.0.0.1:8000/index/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown" >
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                  Login
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="http://127.0.0.1:8000/shoplogin/">Shop Login</a></li>
+                  <li><a class="dropdown-item" href="http://127.0.0.1:8000/login/">User Login</a></li>
+
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://ucarecdn.com/96451546-57b1-43d6-a958-742423bee013/-/format/auto/-/preview/3000x3000/-/quality/lighter/" height="600" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item ">
+      <img src="https://images.samsung.com/is/image/samsung/assets/uk/smartphones/galaxy-s22/images/galaxy-s22_highlights_kv_bora_img.jpg" height="600" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://4kwallpapers.com/images/wallpapers/macbook-air-2020-apple-event-black-background-2880x1800-3304.jpg" height="600" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.sforum.vn/sforum/wp-content/uploads/2022/07/1000-e1657601394804.jpg" height="600" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.guidingtech.com/wp-content/uploads/Download-iPhone-14-and-iPhone-14-Pro-Series-Wallpapers.jpg" height="600" class="d-block w-100" alt="...">
+    </div>
+        <div class="carousel-item">
+      <img src="https://www.apple.com/v/airpods-pro/g/images/meta/og__eui2mpgzwyaa_overview.png" height="600" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://fdn.gsmarena.com/imgroot/news/21/03/oppo-find-x3-pro-ofic/-1220x526/gsmarena_001.jpg" height="600" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+{% include 'footer.html' %}
+
+</body>
+</html>
