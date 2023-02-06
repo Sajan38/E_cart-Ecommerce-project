@@ -6,7 +6,7 @@ urlpatterns=[
 
     # user
 
-    path('index/',index),
+    path('',index),
     path('register/',registerview),
     path('login/',loginview),
     path('user/',userview),

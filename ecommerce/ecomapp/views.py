@@ -234,6 +234,8 @@ def productedit(request,id):
                 os.remove(a.image.path)
             a.image=request.FILES['image']
         a.productname=request.POST.get('productname')
+        a.price=request.POST.get('price')
+        a.description=request.POST.get('description')
         a.save()
         return redirect(viewproduct)
     return render(request,'editproduct.html',{'a':a,'it':it})
