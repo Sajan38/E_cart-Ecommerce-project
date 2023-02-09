@@ -119,12 +119,17 @@ def cartremove(request,id):
 def cartbuy(request,id):
     a=cartmodel.objects.get(id=id)
     if request.method == 'POST':
+        im = str(a.image).split("/")[-1]
         item_name=request.POST.get('productname')
         item_price=request.POST.get('price')
         item_quantity=request.POST.get('iquantity')
         total=int(item_price)*int(item_quantity)
-        return render(request,'finalbill.html',{'in':item_name,'ip':item_price,'iq':item_quantity,'t':total})
+        return render(request,'finalbill.html',{'im':im,'in':item_name,'ip':item_price,'iq':item_quantity,'t':total})
     return render(request,'cartbuy.html',{'a':a})
+
+def paymentsucess(request):
+    return render(request,'payment_sucess.html')
+
 
 def shopregview(request):
     if request.method=='POST':

@@ -14,6 +14,7 @@ urlpatterns=[
     path('cartdisplay/',cartdisplay),
     path('cartremove/<int:id>',cartremove),
     path('cartbuy/<int:id>',cartbuy),
+    path('paymentsucess/',paymentsucess),
 
 
 
